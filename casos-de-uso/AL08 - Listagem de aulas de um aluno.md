@@ -1,18 +1,19 @@
-# PR04 - Listagem de Aulas
+# AL04 - Listagem de aulas de um aluno
 
 ## Rotas
 
-| Rota                            | Método | Descrição                                         |
-| ------------------------------  | ------ | ------------------------------------------------- |
-| /api/professores/aulas          | GET    | Lista as solicitações de aula do professor logado |
-| /api/professores/aulas/{aula_id}| GET    | Detalhes de solitação de aula                     |
+| Rota                            | Método | Descrição                         |
+| ------------------------------- | ------ | --------------------------------- |
+| /api/alunos/aulas               | GET    | Lista as aulas de um aluno        |
+| /api/alunos/aulas/{aula_id}     | GET    | Detahes de uma aula               |
 
 ## links para visualização das rotas:
-➤ [GET /api/professores/aulas](#rota-get-api-professores-aulas) </br>
-➤ [GET /api/professores/aulas/{aula_id}](#rota-get-api-professores-aulas-aula-id)
+➤ [GET /api/alunos/aulas](#rota-get-api-alunos-aulas) </br>
+➤ [GET /api/alunos/aulas/{aula_id}](#rota-get-api-alunos-aulas-detail)
 
-<a id="rota-get-api-professores-aulas"></a>
-## Rota GET /api/professores/aulas
+<a id="rota-get-api-alunos-aulas"></a>
+
+## Rota GET /api/alunos/aulas
 
 ### Requisição
 
@@ -35,16 +36,16 @@
 
 **Body**
 
-Não se aplica
+Não se Aplica
 
 ### Resposta
 
 **Status Code**
 
-| Status Code | Descrição                      |
-| ----------- | ------------------------------ |
-| 200         | Listagem realizada com sucesso |
-| 401         | Token inválido                 |
+| Status Code | Descrição                        |
+| ----------- | -------------------------------- |
+| 200         | Aulas retornadas com sucesso     |
+| 401         | Token inválido                   |
 
 **Body**
 
@@ -70,8 +71,9 @@ Não se aplica
 **Requisição**
 
 ```
-GET /api/professores/aulas HTTP/1.1
+GET /api/alunos/aulas HTTP/1.1
 Host: localhost:3000
+Content-Type: application/json
 Accept: application/json
 Authorization: Bearer 303Xs5g4co7glr4xtJHXHvbNI4Pl0y1hgyZZWOENHMx
 ```
@@ -83,38 +85,38 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 [
-  {
-		"id": 1,
-		"aluno": 1,
-		"professor": 2,
-		"nome_aluno": "Carlos Silva",
-		"nome_professor": "João Paulo",
-		"dia_da_aula": "02/10/2024",
-		"horario_de_inicio": "14:00:00",
-		"horario_de_termino": "15:00:00",
-		"numero_de_horas": 1,
-		"preco": 60.0,
-		"status": "Aceita",
-		"descricao_da_aula": "aula de Matemática, especificamente Progressão Aritmética",
-		"created_at": "2024-09-14T16:24:36.567641Z",
-		"updated_at": "2024-09-14T16:25:09.933616Z"
-	},
-	{
-		"id": 2,
-		"aluno": 2,
-		"professor": 3,
-		"nome_aluno": "Jhonatan Rodrigues",
-		"nome_professor": "Lucas Souza",
-		"dia_da_aula": "03/10/2024",
-		"horario_de_inicio": "17:00:00",
-		"horario_de_termino": "19:00:00",
-		"numero_de_horas": 2,
-		"preco": 60.0,
-		"status": "Aceita",
-		"descricao_da_aula": "aula de Matemática, especificamente Progressão Aritmética",
-		"created_at": "2024-09-14T17:07:47.250685Z",
-		"updated_at": "2024-09-14T17:07:47.278354Z"
-	}
+    {
+        "id": 1,
+        "aluno": 1,
+        "professor": 1,
+        "nome_aluno": "João da Silva",
+        "nome_professor": "Carlos Augusto",
+        "dia_da_aula": "16/09/2024",
+        "horario_de_inicio": "19:00:00",
+        "horario_de_termino": "21:00:00",
+        "numero_de_horas": 2,
+        "preco": 100.0,
+        "status": "Pendente",
+        "descricao_da_aula": "Aula de função afim",
+        "created_at": "2024-09-15T22:48:57.797808Z",
+        "updated_at": "2024-09-15T22:48:57.813858Z"
+    },
+    {
+        "id": 2,
+        "aluno": 1,
+        "professor": 5,
+        "nome_aluno": "João da Silva",
+        "nome_professor": "Antonio Carlos",
+        "dia_da_aula": "17/09/2024",
+        "horario_de_inicio": "18:00:00",
+        "horario_de_termino": "20:00:00",
+        "numero_de_horas": 2,
+        "preco": 200.0,
+        "status": "Cancelada",
+        "descricao_da_aula": "Aula de função afim",
+        "created_at": "2024-09-15T22:48:57.797808Z",
+        "updated_at": "2024-09-15T22:48:57.813858Z"
+    }
 ]
 ```
 
@@ -131,9 +133,10 @@ Content-Type: application/json
   "cause": "TokenExpiredError"
 }
 ```
-<a id="rota-get-api-professores-aulas-aula-id"></a>
 
-## Rota GET /api/professores/aulas/{aula_id}
+<a id="rota-get-api-alunos-aulas-detail"></a>
+
+## Rota GET /api/alunos/aulas/{aula_id}
 
 ### Requisição
 
@@ -155,10 +158,10 @@ Não se aplica
 
 **Status Code**
 
-| Status Code | Descrição                      |
-| ----------- | ------------------------------ |
-| 200         | Listagem realizada com sucesso |
-| 401         | Token inválido                 |
+| Status Code | Descrição                         |
+| ----------- | --------------------------------- |
+| 200         | Aula retornada com sucesso        |
+| 401         | Token inválido                    |
 
 **Body**
 
@@ -167,8 +170,8 @@ Não se aplica
 | id                 | int    | ID da aula          | 1                          |
 | aluno              | int    | ID do aluno         | 2                          |
 | professor          | int    | ID do professor     | 1                          |
-| aluno_nome         | string | Nome do aluno       | 'Carlos Souza'             |
-| professor          | int    | Nome do professor   | 'João Silva'               |
+| nome_aluno         | string | Nome do aluno       | 'Carlos Souza'             |
+| nome_professor     | int    | Nome do professor   | 'João Silva'               |
 | dia_da_aula        | string | Data da aula        | "16/09/2024"               |
 | horario_de_inicio  | string | Hórario de inicio   | "14:00:00"                 |
 | horario_de_termino | string | Hórario de termino  | "15:00:00"                 |
@@ -184,8 +187,9 @@ Não se aplica
 **Requisição**
 
 ```
-GET /api/professores/aulas/1 HTTP/1.1
+GET /api/alunos/aulas/3 HTTP/1.1
 Host: localhost:3000
+Content-Type: multipart/form-data
 Accept: application/json
 Authorization: Bearer 303Xs5g4co7glr4xtJHXHvbNI4Pl0y1hgyZZWOENHMx
 ```
@@ -198,20 +202,20 @@ Content-Type: application/json
 
 
 {
-	"id": 1,
-	"aluno": 1,
-	"professor": 2,
-	"nome_estudante": "Carlos Silva",
-	"nome_professor": "João Paulo",
-	"dia_da_aula": "02/10/2024",
-	"horario_de_inicio": "14:00:00",
-	"horario_de_termino": "15:00:00",
-	"numero_de_horas": 1,
-	"preco": 60.0,
-	"status": "Aceita",
-	"descricao_da_aula": "aula de Matemática, especificamente Progressão Aritmética",
-	"created_at": "2024-09-14T16:24:36.567641Z",
-	"updated_at": "2024-09-14T16:25:09.933616Z"
+    "id": 3,
+    "aluno": 5,
+    "professor": 22,
+    "nome_aluno": "João da Silva",
+    "nome_professor": "Carlos Augusto",
+    "dia_da_aula": "22/10/2024",
+    "horario_de_inicio": 07:00:00",
+    "horario_de_termino": "09:00:00",
+    "numero_de_horas": 2,
+    "preco": 100.0,
+    "status": "Aceita",
+    "descricao_da_aula": "Aula de função afim",
+    "created_at": "2024-09-15T22:48:57.797808Z",
+    "updated_at": "2024-09-15T22:48:57.813858Z"
 }
 ```
 
