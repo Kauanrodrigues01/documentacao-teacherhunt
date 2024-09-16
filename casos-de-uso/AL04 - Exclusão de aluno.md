@@ -4,7 +4,7 @@
 
 | Rota                            | Método | Descrição                         |
 | ------------------------------- | ------ | --------------------------------- |
-| /api/alunos                     | DELETE | Atualizar os dados de um aluno    |
+| /api/alunos                     | DELETE | Deletar conta do aluno            |
 
 ## Rota DELETE /api/alunos
 
@@ -24,7 +24,6 @@ Não se aplica
 
 Não se aplica
 
-
 ### Resposta
 
 **Status Code**
@@ -32,7 +31,6 @@ Não se aplica
 | Status Code | Descrição                        |
 | ----------- | -------------------------------- |
 | 204         | Aluno cadastrado com sucesso     |
-| 400         | Erro de validação                |
 | 401         | Token inválido                   |
 
 **Body**
