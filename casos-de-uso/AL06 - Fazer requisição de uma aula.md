@@ -34,9 +34,9 @@ Regras de validação:
 
 - `professor`: obrigatório, ID de um professor válido
 - `dia_da_aula`: obrigatório, Dia que o usuário deseja ter a aula
-- `horario_de_inicio`: obrigatório, os horarios que são válidos: ['07:00', '08:00', '09:00', '10:00', '11:00', '12:00', '13:00', '14:00', '15:00', '16:00', '17:00', '18:00', '19:00']
+- `horario_de_inicio`: obrigatório, os horarios que são válidos: ['07:00', '07:30', '08:00', '08:30', '09:00', '09:30', '10:00', '10:30', '11:00', '11:30', '12:00', '12:30', '13:00', '13:30', '14:00', '14:30', '15:00', '15:30', '16:00', '16:30', '17:00', '17:30', '18:00', '18:30', '19:00', '19:30', '20:00'], o horário de termino(horario de incio + numero de horas) não deve exceder 21:00
 - `numero_de_horas`: obrigatório, deve ser um número inteiro positivo, de no máximo 4
-- `descricao_da_aula`: Opcional
+- `descricao_da_aula`: Opcional, não pode ser completamente númerica, não pode ser uma string vazia, deve ter mais de 10 caracteres
 
 ### Resposta
 
