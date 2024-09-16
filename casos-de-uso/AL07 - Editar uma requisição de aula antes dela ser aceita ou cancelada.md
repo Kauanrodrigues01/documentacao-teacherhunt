@@ -1,14 +1,12 @@
-# AL03 - Requisição de uma aula
-
-Abaixo você encontrará todas as informações necessárias para a implementação do caso de uso **Cadastro de Aula**.
+# AL03 - Editar requisição de uma aula
 
 ## Rotas
 
 | Rota                                   | Método | Descrição                        |
 | -------------------------------------- | ------ | -------------------------------- |
-| /api/alunos/agendar-aulas              | POST   | Cadastra uma solicitação de aula |
+| /api/alunos/atualizar-aula/{aula_id}   | POST   | Edita uma solicitação de aula |
 
-## Rota POST /api/alunos/agendar-aulas
+## Rota POST /api/alunos/atualizar-aula/{aula_id} 
 
 ### Requisição
 
@@ -26,7 +24,6 @@ Não se aplica
 
 | Campo              | Tipo   | Descrição           | Exemplo                    |
 | ----------------   | ------ | ------------------- | -------------------------- |
-| professor          | int    | ID do professor     | 1                          |
 | dia_da_aula        | string | Data da aula        | "16/09/2024"               |
 | horario_de_inicio  | string | Hórario de inicio   | "14:00:00"                 |
 | numero_de_horas    | int    | duração da aua      | 1                          |
@@ -34,7 +31,7 @@ Não se aplica
 
 Regras de validação:
 
-- `professor`: obrigatório, ID de um professor válido
+- **Esses são os únicos campos que podem ser atualizados**
 - `dia_da_aula`: obrigatório, Dia que o usuário deseja ter a aula
 - `horario_de_inicio`: obrigatório, os horarios que são válidos: ['07:00', '08:00', '09:00', '10:00', '11:00', '12:00', '13:00', '14:00', '15:00', '16:00', '17:00', '18:00', '19:00']
 - `numero_de_horas`: obrigatório, deve ser um número inteiro positivo, de no máximo 4
@@ -46,7 +43,7 @@ Regras de validação:
 
 | Status Code | Descrição                    |
 | ----------- | ---------------------------- |
-| 201         | Aula requisitada com sucesso |
+| 201         | Aula atualizada com sucesso  |
 | 400         | Erro de validação            |
 
 **Body**
@@ -73,17 +70,16 @@ Regras de validação:
 **Requisição**
 
 ```
-POST /api/alunos/agendar-aulas HTTP/1.1
+POST /api/alunos/atualizar-aula/1 HTTP/1.1
 Host: localhost:3000
 Content-Type: application/json
 Accept: application/json
 
 {
-	"professor": 1,
 	"dia_da_aula": "2024-09-16",
 	"horario_de_inicio": "19:00",
 	"numero_de_horas": 2,
-  "descricao_da_aula": "Aula de função afim"
+    "descricao_da_aula": "Aula atualizada"
 }
 ```
 
@@ -105,7 +101,7 @@ Content-Type: application/json
 	"numero_de_horas": 2,
 	"preco": 100.0,
 	"status": "Pendente",
-	"descricao_da_aula": "Aula de função afim",
+	"descricao_da_aula": "Aula atualizada",
 	"created_at": "2024-09-15T22:48:57.797808Z",
 	"updated_at": "2024-09-15T22:48:57.813858Z"
 }
@@ -136,7 +132,25 @@ Content-Type: application/json
 }
 ```
 
-**Resposta com professor não encontrado**
+**Resposta com aula não encontrada**
+
+```
+HTTP/1.1 404 Not Found
+Content-Type: application/json
+
+{
+  "message": "Validation fails",
+  "status": 404,
+  "error": "Not Found",
+  "errors": {
+    {
+	    "detail": "No Classroom matches the given query."
+    }
+  }
+}
+```
+
+**Resposta quando a aula já foi aceita ou cancelada**
 
 ```
 HTTP/1.1 404 Not Found
@@ -146,11 +160,9 @@ Content-Type: application/json
   "message": "Validation fails",
   "status": 400,
   "error": "Bad Request",
-  "cause": "ValidationError",
   "errors": {
-    "professor": [
-      "Pk inválido \"100\" - objeto não existe."
-    ]
+    {
+	    "error": "Está aula já foi aceita ou cancelada não é possivel altera-lá."
+    }
   }
 }
-```

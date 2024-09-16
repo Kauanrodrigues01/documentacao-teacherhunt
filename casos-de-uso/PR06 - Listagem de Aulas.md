@@ -1,7 +1,5 @@
 # PR04 - Listagem de Aulas
 
-Abaixo você encontrará todas as informações necessárias para a implementação do caso de uso **Listagem de Alunos**.
-
 ## Rotas
 
 | Rota                            | Método | Descrição                                         |
@@ -9,6 +7,11 @@ Abaixo você encontrará todas as informações necessárias para a implementaç
 | /api/professores/aulas          | GET    | Lista as solicitações de aula do professor logado |
 | /api/professores/aulas/{aula_id}| GET    | Detalhes de solitação de aula                     |
 
+## links para visualização das rotas:
+➤ [GET /api/professores/aulas](#rota-get-api-professores-aulas) </br>
+➤ [GET /api/professores/aulas/{aula_id}](#rota-get-api-professores-aulas-aula-id)
+
+<a id="rota-get-api-professores-aulas"></a>
 ## Rota GET /api/professores/aulas
 
 ### Requisição
@@ -121,7 +124,7 @@ Content-Type: application/json
   "cause": "TokenExpiredError"
 }
 ```
-
+<a id="rota-get-api-professores-aulas-aula-id"></a>
 
 ## Rota GET /api/professores/aulas/{aula_id}
 

@@ -1,13 +1,17 @@
 # PR03 - Atualização de dados pessoais
 
-Abaixo você encontrará todas as informações necessárias para a implementação do caso de uso **Atualização de dados pessoais**.
-
 ## Rotas
 
 | Rota                  | Método | Descrição                             |
 | --------------------- | ------ | ------------------------------------- |
 | /api/professores      | PUT    | Atualiza os dados do professor logado |
 | /api/professores/foto | POST   | Atualiza a foto de um professor       |
+
+## links para visualização das rotas:
+➤ [PUT /api/professores](#rota-put-api-professores) </br>
+➤ [POST /api/professores/foto](#rota-post-api-professores-foto)
+
+<a id="rota-put-api-professores"></a>
 
 ## Rota PUT /api/professores
 
@@ -161,6 +165,8 @@ Content-Type: application/json
   "cause": "TokenExpiredError"
 }
 ```
+
+<a id="rota-post-api-professores-foto"></a>
 
 ## Rota POST /api/professores/foto
 

@@ -7,6 +7,12 @@
 | /api/alunos                     | PUT    | Atualizar os dados de um aluno    |
 | /api/alunos/foto                | POST   | Atualiza foto de perfil do aluno  |
 
+## links para visualização das rotas:
+➤ [PUT /api/alunos](#rota-put-api-alunos) </br>
+➤ [POST /api/alunos/foto}](#rota-post-api-alunos-foto)
+
+<a id="rota-put-api-alunos"></a>
+
 ## Rota PUT /api/alunos
 
 ### Requisição
@@ -128,6 +134,8 @@ Content-Type: application/json
   "cause": "TokenExpiredError"
 }
 ```
+
+<a id="rota-post-api-alunos-foto"></a>
 
 ## Rota POST /api/alunos/foto
 

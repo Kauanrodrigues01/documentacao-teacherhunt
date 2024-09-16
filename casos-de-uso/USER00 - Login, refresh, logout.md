@@ -1,7 +1,5 @@
 # PR02 - Login, refresh, logout de um aluno ou professor
 
-Abaixo você encontrará todas as informações necessárias para a implementação do caso de uso **Login**.
-
 ## Rotas
 
 | Rota              | Método | Descrição                          |
@@ -9,6 +7,13 @@ Abaixo você encontrará todas as informações necessárias para a implementaç
 | /api/auth/login   | POST   | Faz login                          |
 | /api/auth/refresh | POST   | Atualiza o token de acesso         |
 | /api/auth/logout  | POST   | Faz logout                         |
+
+## links para visualização das rotas:
+➤ [GET /api/auth/login](#rota-post-api-auth-login) </br>
+➤ [GET /api/auth/refresh](#rota-post-api-auth-refresh) </br>
+➤ [GET /api/auth/logout](#rota-post-api-auth-logout) </br>
+
+<a id="rota-post-api-auth-login"></a>
 
 ## Rota POST /api/auth/login
 
@@ -114,6 +119,7 @@ Content-Type: application/json
   "cause": "InvalidCredentialsError"
 }
 ```
+<a id="rota-post-api-auth-refresh"></a>
 
 ## Rota POST /api/auth/refresh
 
@@ -213,6 +219,8 @@ Content-Type: application/json
   "cause": "InvalidTokenError"
 }
 ```
+
+<a id="rota-post-api-auth-logout"></a>
 
 ## Rota POST /api/auth/logout
 

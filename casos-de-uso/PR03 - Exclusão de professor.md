@@ -1,7 +1,5 @@
 # PR05 - Exclusão de professor
 
-Abaixo você encontrará todas as informações necessárias para a implementação do caso de uso **Exclusão de professor**.
-
 ## Rotas
 
 | Rota             | Método | Descrição                 |

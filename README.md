@@ -37,8 +37,8 @@ Seu desafio é criar uma API para gerenciar professores e aulas particulares. A 
 | /api/alunos   #                            | DELETE | Deleta um aluno logado                            | Sim                 | # Adicionado           |
 | /api/alunos/me #                           | GET    | Lista o aluno logado                              | Sim                 | # Adicionado           |
 | /api/alunos/foto #                         | POST   | Atualiza a foto de um professor                   | Sim                 | # Adicionado           |
-| /api/alunos/agendar-aulas                  | POST   | Cria uma requisição de aula                       | Sim                 | # Adicionado           |
-| /api/alunos/atualizar-aula/{aula_id}       | PUT    | Atualiza dados de uma aula                        | Sim                 | # Adicionado           |
+| /api/alunos/agendar-aulas #                | POST   | Cria uma requisição de aula                       | Sim                 | # Adicionado           |
+| /api/alunos/atualizar-aula/{aula_id}  #    | PUT    | Atualiza dados de uma aula                        | Sim                 | # Adicionado           |
 | /api/alunos/aulas                          | GET    | Lista as aulas de um aluno                        | Sim                 | # Adicionado           |
 | /api/alunos/aulas/{aula id}                | GET    | Detalhes da aula                                  | Sim                 | # Adicionado           |
 | ---------------------------------------    |--------|---------------------------------------------------|---------------------|------------------------|

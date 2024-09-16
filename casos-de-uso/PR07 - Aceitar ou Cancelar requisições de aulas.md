@@ -1,13 +1,17 @@
 # PR04 - Aceitar ou cancelar uma solicitação de aula
 
-Abaixo você encontrará todas as informações necessárias para a implementação do caso de uso **Listagem de Alunos**.
-
 ## Rotas
 
 | Rota                                         | Método | Descrição                                         |
 | -------------------------------------------- | ------ | ------------------------------------------------- |
 | /api/professores/aulas/aceitar/{aula_id}     | POST   | Aceitar uma solicitação de aula                   |
 | /api/professores/aulas/cancelar/{aula_id}    | POST   | Cancelar/Recusar uma solicitação de aula          |
+
+## links para visualização das rotas:
+➤ [POST /api/professores/aulas/aceitar/{aula_id}](#rota-post-api-professores-aulas-aceitar) </br>
+➤ [POST /api/professores/aulas/cancelar/{aula_id}](#rota-post-api-professores-aulas-cancelar)
+
+<a id="rota-post-api-professores-aulas-aceitar"></a>
 
 ## Rota POST /api/professores/aulas/aceitar/{aula_id}
 
@@ -76,6 +80,7 @@ Content-Type: application/json
 }
 ```
 
+<a id="rota-post-api-professores-aulas-cancelar"></a>
 
 ## Rota POST /api/professores/aulas/cancelar/{aula_id}
 

@@ -1,7 +1,5 @@
 # PR01 - Cadastro de professor
 
-Abaixo você encontrará todas as informações necessárias para a implementação do caso de uso **Cadastro de professor**.
-
 ## Rotas
 
 | Rota             | Método | Descrição             |
