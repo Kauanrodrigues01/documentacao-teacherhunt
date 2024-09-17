@@ -22,7 +22,7 @@ Não se aplica
 
 **Body**
 
-Não se aplica
+### OBS: Se um professor possuir um aula aceita que ainda não passou, ele não pode excluir a conta
 
 ### Resposta
 

@@ -12,7 +12,9 @@
 
 **Query Parameters**
 
-Não se aplica
+| Nome   | Tipo   | Descrição                         | Exemplo    |
+| ------ | ------ | --------------------------------- | ---------- |
+| nome   | string | Busca pelo nome da materia        | matematica |
 
 **Headers**
 
