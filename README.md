@@ -4,12 +4,9 @@
   API para gerenciamento de professores e aulas particulares
 </p>
 
-## índice
+## Utilizar a API
 
-- [Descrição](#descrição)
-- [Rotas](#rotas)
-- [Requisitos](#requisitos)
-- [Casos de Uso](#casos-de-uso)
+- [Passo a passo para utilizar a api](./passo%20a%20passo%20uso%20da%20API.md)
 
 ## Descrição
 
