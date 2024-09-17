@@ -69,4 +69,9 @@ OBS: O vídeo de instalação do MySQL talvez instale algum outro MySQL sem ser 
     python manage.py runserver
     ```
 
+## **Aviso importante:**
+
+- Sempre que fechar e abrir o VS Code tem que ativar a venv(ambiente virtual) antes de utilizar o "python manage.py runserver", sempre verificar se a venv está ativa antes de iniciar o servidor.
+- Quando a venv está ativa fica o nome (venv) em cima da linha principal do terminal
+
 ## Qualquer erro tempo pesquisar no chatgpt
