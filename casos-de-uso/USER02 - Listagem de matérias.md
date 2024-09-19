@@ -1,4 +1,4 @@
-# AL04 - Cadastro de Aluno
+# USER02 - Listar Máterias
 
 ## Rotas
 

@@ -44,7 +44,10 @@ Seu desafio é criar uma API para gerenciar professores e aulas particulares. A 
 | /api/materias                              | POST   | Cria uma nova materia(subject)                    | Sim(superuser)      |   Adicionado           |
 | /api/materias                              | DELETE | Deleta uma materia(subject)                       | Sim(superuser)      |   Adicionado           |
 | /api/materias                              | PUT    | Atualiza completamente uma materia(subject)       | Sim(superuser)      |   Adicionado           |
-|----------------------------------------    |--------|---------------------------------------------------|---------------------|------------------------|
+|------------------------------------------- |--------|---------------------------------------------------|---------------------|------------------------|
 | /api/auth/login                            | POST   | Faz login                                         | Não                 |                        |
 | /api/auth/refresh                          | POST   | Atualiza o token de acesso                        | Não                 |                        |
 | /api/auth/logout                           | POST   | Faz logout                                        | Sim                 |                        |
+| /api/auth/password-reset-request           | POST   | Manda uma requisição com link para o email        | Não                 |  adicionado            |
+| /api/auth/password-reset/<uidb64>/<token>  | GET    | Checa se o token enviado é válido, retorna o token| Não                 |  adicionado            |
+| /api/auth/password-reset-complete          | PATCH  | Redefine a senha passando o token e o uidb64      | Não                 |  adicionado            |
