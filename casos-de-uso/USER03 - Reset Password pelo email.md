@@ -172,7 +172,7 @@ Content-Type: application/json
     "error": "Unauthorized",
     "cause": "NotAuthenticated",
     "errors": {
-        "error": "Token inválido"
+        "error": "Token inválido, solicite um novo."
     }
 }
 ```
