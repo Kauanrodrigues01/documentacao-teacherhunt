@@ -1,4 +1,4 @@
-# Desafio: HyperProf
+# TeacherHunt
 
 <p align="center" style='font-size: 25px'>
   API para gerenciamento de professores e aulas particulares
