@@ -38,7 +38,7 @@ Não se aplica
 **Body**
 
 {
-	"sucesso": "Foi enviado um email com o link de redefinição de senha."
+	"message": "Foi enviado um email com o link de redefinição de senha."
 }
 
 ### Exemplos
@@ -63,7 +63,7 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-	"sucesso": "Foi enviado um email com o link de redefinição de senha."
+	"message": "Foi enviado um email com o link de redefinição de senha."
 }
 ```
 
