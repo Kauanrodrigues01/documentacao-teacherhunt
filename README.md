@@ -29,6 +29,7 @@ Seu desafio é criar uma API para gerenciar professores e aulas particulares. A 
 | /api/professores/aulas/{aula_id}           | GET    | Detalhes de uma aula                                          | Sim                 |   Adicionado           |
 | /api/professores/aulas/aceitar/{aula_id}   | POST   | Aceita uma aula                                               | Sim                 |   Adicionado           |
 | /api/professores/aulas/cancelar/{aula_id}  | POST   | Cancela uma aula                                              | Sim                 |   Adicionado           |
+| /api/professores/{id_professor}/avaliacoes | GET    | Lista todas as avaliações de um professor                     | Não                 |   Adicionado           |
 | ------------------------------------------ |--------|-------------------------------------------------------------- |---------------------|------------------------|
 | /api/alunos                                | POST   | Cadastra um estudante                                         | Não                 |   Adicionado           |
 | /api/alunos                                | PUT    | Atuaiza os dados de um estudante logado                       | Sim                 |   Adicionado           |
@@ -39,6 +40,7 @@ Seu desafio é criar uma API para gerenciar professores e aulas particulares. A 
 | /api/alunos/atualizar-aula/{aula_id}       | PUT    | Atualiza dados de uma aula                                    | Sim                 |   Adicionado           |
 | /api/alunos/aulas                          | GET    | Lista as aulas de um aluno                                    | Sim                 |   Adicionado           |
 | /api/alunos/aulas/{aula id}                | GET    | Detalhes da aula                                              | Sim                 |   Adicionado           |
+| /api/alunos/avaliar-professor              | POST   | Avalia um professor                                           | Sim                 |   Adicionado           |
 | ------------------------------------------ |--------|-------------------------------------------------------------- |---------------------|------------------------|
 | /api/materias                              | GET    | Lista de todas as materias(subjects)                          | Não                 |   Adicionado           |
 | /api/materias                              | POST   | Cria uma nova materia(subject)                                | Sim(superuser)      |   Adicionado           |
