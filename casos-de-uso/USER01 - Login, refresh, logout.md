@@ -9,9 +9,9 @@
 | /api/auth/logout  | POST   | Faz logout                         |
 
 ## links para visualização das rotas:
-➤ [GET /api/auth/login](#rota-post-api-auth-login) </br>
-➤ [GET /api/auth/refresh](#rota-post-api-auth-refresh) </br>
-➤ [GET /api/auth/logout](#rota-post-api-auth-logout) </br>
+➤ [POST /api/auth/login](#rota-post-api-auth-login) </br>
+➤ [POST /api/auth/refresh](#rota-post-api-auth-refresh) </br>
+➤ [POST /api/auth/logout](#rota-post-api-auth-logout) </br>
 
 <a id="rota-post-api-auth-login"></a>
 

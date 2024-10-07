@@ -1,4 +1,4 @@
-# AL04 - Ver dados do professor logado
+# PR04 - Ver dados do professor logado
 
 ## Rotas
 
@@ -44,6 +44,7 @@ Não se aplica
 | descricao        | string | Descrição do professor                    | "Professor de matemática"                           |
 | valor_hora       | float  | Valor da aula do professor                | 50.0                                                |
 | foto_perfil      | string | Foto de perfil do professor               | "https://github.com/joao_silva.png"                 |
+| avaliacao        | float  | Avaliacao do professor                    | 2.5                                                 |
 | materias         | list   | Lista das materias relacionadas a um prof | [1, 4]                                              |
 | materias_objetos | list   | Lista das materias relacionadas a um prof | [{"id": 1, "nome": "Matematica"}, {"id": "Física"}] |
 | created_at       | string | Data de criação                           | "2020-10-10T00:00:00.000Z"                          |

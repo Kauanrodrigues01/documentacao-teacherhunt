@@ -1,4 +1,4 @@
-# AL03 - Requisição de uma aula
+# AL06 - Requisição de uma aula
 
 ## Rotas
 

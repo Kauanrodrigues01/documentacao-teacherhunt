@@ -1,4 +1,4 @@
-# PR04 - Aceitar ou cancelar uma solicitação de aula
+# PR07 - Aceitar ou cancelar uma solicitação de aula
 
 ## Rotas
 

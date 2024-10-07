@@ -1,4 +1,4 @@
-# PR05 - Exclusão de professor
+# PR03 - Exclusão de professor
 
 ## Rotas
 

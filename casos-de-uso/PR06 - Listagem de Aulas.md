@@ -1,4 +1,4 @@
-# PR04 - Listagem de Aulas
+# PR06 - Listagem de Aulas
 
 ## Rotas
 
