@@ -41,6 +41,7 @@ Não se Aplica
 | ----------- | -------------------------------- |
 | 200         | Professores favoritos retornados |
 | 401         | Token inválido                   |
+| 404         | Professores não encontrados      |
 
 **Body**
 
@@ -179,8 +180,9 @@ Não se aplica
 
 | Status Code | Descrição                         |
 | ----------- | --------------------------------- |
-| 200         | Aula retornada com sucesso        |
+| 200         | Professor adicionado na lista     |
 | 401         | Token inválido                    |
+| 404         | Professor não encontrado          |
 
 **Body**
 
@@ -263,8 +265,9 @@ Não se aplica
 
 | Status Code | Descrição                         |
 | ----------- | --------------------------------- |
-| 200         | Aula retornada com sucesso        |
+| 200         | Professor removido da lista       |
 | 401         | Token inválido                    |
+| 404         | Professor não encontrado          |
 
 **Body**
 
