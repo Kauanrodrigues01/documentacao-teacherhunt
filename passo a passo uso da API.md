@@ -58,11 +58,10 @@ OBS: O vídeo de instalação do MySQL talvez instale algum outro MySQL sem ser 
     REFRESH_TOKEN_LIFETIME_SECONDS = 7200
     ```
 
-- Depois disso volte no terminal e execute os comandos "python manage.py makemigrations" e depois "python manage.py migrate"
+- Depois disso volte no terminal e execute o comando "python manage.py migrate"
 - Pronto, a API está pronta para usar, para ativar o servidor use o comando "python manage.py runserver"
 
     ```
-    python manage.py makemigrations
     python manage.py migrate
 
     # Iniciar o servidor
@@ -80,4 +79,4 @@ OBS: O vídeo de instalação do MySQL talvez instale algum outro MySQL sem ser 
 - Sempre que fechar e abrir o VS Code tem que ativar a venv(ambiente virtual) antes de utilizar o "python manage.py runserver", sempre verificar se a venv está ativa antes de iniciar o servidor.
 - Quando a venv está ativa fica o nome (venv) em cima da linha principal do terminal
 
-## Qualquer erro tempo pesquisar no chatgpt
+## Qualquer erro tenta pesquisar no chatgpt
