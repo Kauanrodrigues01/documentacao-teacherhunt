@@ -69,6 +69,12 @@ OBS: O vídeo de instalação do MySQL talvez instale algum outro MySQL sem ser 
     python manage.py runserver
     ```
 
+## Popular banco de dados(Opcional)
+- Executando o arquivo populate, o banco de dados vai se preencher com vários dados aleatórios. Pode ajudar no desenvolvimento do front e mobile, pois vai ter dados para serem visualizados na aplicação.
+    ```
+    python populate.py
+    ```
+
 ## **Aviso importante:**
 
 - Sempre que fechar e abrir o VS Code tem que ativar a venv(ambiente virtual) antes de utilizar o "python manage.py runserver", sempre verificar se a venv está ativa antes de iniciar o servidor.
