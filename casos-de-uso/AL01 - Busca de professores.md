@@ -20,13 +20,17 @@
 
 **Query Parameters**
 
-| Nome | Tipo   | Descrição                         | Exemplo    |
-| ---- | ------ | --------------------------------- | ---------- |
-| q    | string | Busca pela descrição do professor | Matemática |
+| Nome            | Tipo   | Descrição                              | Exemplo    |
+| --------------- | ------ | -------------------------------------- | ---------- |
+| q               | string | Busca pela descrição do professor      | Matemática |
+| avaliacao_min   | float  | Busca um professor pela avaliação min  | 2.5        |
+| preco_max       | float  | Busca um professor peo valor hora max  | 77.0       |
 
 Regras de validação:
 
 - `q`: opcional, deve ter no mínimo 3 caracteres, máximo 100 caracteres
+- `avaliacao_min`: opcional, deve ser um número 
+- `preco_max`: opcional, deve ser um número
 
 **Headers**
 
